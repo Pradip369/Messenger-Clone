@@ -1,0 +1,27 @@
+.messege{
+    margin: 10px;
+    width: fit-content;
+}
+.messege__user{
+    margin-left: auto;
+    color: white;
+    text-align: left !important;
+}
+.messege__usercard{
+    background-color: rgb(121, 107, 202) !important;
+    box-shadow: 3px 3px 6px rgb(76, 75, 80) !important;
+    color: rgb(255, 255, 255);
+    max-width: 50ch;
+}
+.messege__guestcard{
+    background-color: rgb(170, 207, 207) !important;
+    box-shadow: 3px 3px 6px rgb(73, 70, 70) !important;
+    color: rgb(15, 12, 12);
+    max-width: 50ch;
+}
+
+@media screen and (max-width: 650px) {
+    .messege__usercard,.messege__guestcard {
+        max-width: 25ch;
+    }
+}

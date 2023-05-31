@@ -1,38 +1,43 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app__form{
+  padding: 5px ;
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+  background-color: rgb(211, 207, 207);
+  width: 90%;
+  margin: 20px;
+  border-radius: 4rem;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app__formcntroll{
+  display: flex !important;
+  flex-direction: row !important;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.app__iconbutton{
+  flex: 0;
 }
+.app__input{
+  flex: 1;
+  outline: none;
+  border: none;
+  border-radius: 1.9rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 
-.App-link {
-  color: #61dafb;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.app__welcom{
+  position: sticky;
+  top: 0%;
+  background-color: rgb(30, 235, 30);
+  background-image: linear-gradient(to right, rgb(248, 233, 98), rgb(241, 135, 135));
+  z-index: 1;
+  text-align: left;
+}
+.app__clone{
+  text-align: center;
+  font-style: italic;
+  background-image: linear-gradient(to right, rgb(248, 233, 98), rgb(241, 135, 135));
+  margin-bottom: 0%;
 }
